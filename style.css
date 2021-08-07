@@ -5,6 +5,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body {
     margin: 0;
@@ -96,12 +98,13 @@ header {
 
 .arrow {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
 }
 
 .arrow img {
-    position: relative;
-    right: -710px;
-    bottom: -50px;
+    padding-top: 6rem;
 }
 
  .pairofsix {
@@ -128,7 +131,7 @@ header {
     align-self: center;
     margin-top: 140px;
     font-family: 'Barlow', sans-serif;
-    text-align: left;
+    text-align: center;
 }
 
 .text-div p {
@@ -154,13 +157,14 @@ a.linkis {
     width: 500px;
     align-self: center;
     position: absolute;
-    margin-top: 18rem;
+    padding-top: 183px;
 }
 
 .info2 h4 {
     line-height: .5rem;
     font-size: 2rem;
     color: hsl(167, 40%, 24%);
+    padding-bottom: 25px;
 }
 
 .pho {
@@ -168,7 +172,7 @@ a.linkis {
 }
 
 .info2 p {
-    letter-spacing: 1;
+    letter-spacing: 1px;
     line-height: 25px;
     color: hsl(212, 27%, 19%);
     font-family: 'Barlow', sans-serif;
@@ -220,6 +224,11 @@ a.linkis {
     margin-bottom: 30px;
 }
 
+.six img {
+    width: 100%;
+    height: 100%;
+}
+
 span.who {
     font-size: 1rem;
     line-height: 30px;
@@ -234,11 +243,11 @@ span.who {
 
 .quaphoto {
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .quaphoto img {
-    max-width: 360px;
+    max-width: 25%;
 }
 
 footer {
@@ -254,26 +263,26 @@ footer {
 
 footer h3 {
     text-align: center;
-    font-size: 1.5rem;
-    color: hsl(168, 38%, 37%);
+    font-size: 2.2rem;
+    color: hsl(168deg 56% 24%);
     line-height: 1rem;
+    padding-top: 4rem;
 }
 
 .contacts {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3rem;
-    margin-top: 14px;
-    width: 20%;
+    padding: 2rem 0;
+    margin: 1rem 0;
+    width: 35%;
     color: hsl(168, 38%, 37%);
     cursor: pointer;
 }
 
 .contacts span {
-    display: flex;
-    justify-content: space-between;
-    line-height: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .contacts span:hover {
@@ -281,7 +290,7 @@ footer h3 {
 }
 
 .logos {
-    width: 10%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -301,6 +310,7 @@ svg:hover {
 .attribution {
     text-align: center;
     margin-top: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .attribution a {
@@ -312,6 +322,11 @@ svg:hover {
 }
 
 @media (max-width: 600px) {
+    
+    header {
+        background-image: url(./images/mobile/image-header.jpg);
+    }
+
     .toggle-button {
       display: flex;
       margin-top: 1rem;
@@ -384,6 +399,22 @@ svg:hover {
 
     .info {
         min-width: 700px;
+    }
+
+    .info2 {
+        width: 500px;
+        padding-top: 250px;
+    }
+
+    .info2 h4{
+        width: 400px;
+        padding-bottom: 15px;
+        padding-top: 3rem;
+    }
+
+    .info2 p {
+        margin-left: 5rem;
+        padding-top: 1rem;
     }
 
     .text-div {
